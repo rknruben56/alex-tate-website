@@ -1,4 +1,5 @@
 import React, { ReactNode } from 'react'
+import { Container } from 'react-bootstrap';
 import styled from 'styled-components'
 
 interface Props {
@@ -7,15 +8,17 @@ interface Props {
 
 const MainContent = styled.main`
   color: #232129;
-  padding: 96px;
+  padding-top: 60px;
   font-family: "playfair, roboto, sans-serif, serif";
 `;
 
 const Main = ({children}: Props) => {
   return (
+    <Container>
     <MainContent>
       {children}
     </MainContent>
+    </Container>
   )
 }
 
