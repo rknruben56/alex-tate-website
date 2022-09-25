@@ -12,12 +12,12 @@ const MainContent = styled.main`
   font-family: "playfair, roboto, sans-serif, serif";
 `;
 
-const Main = ({children}: Props) => {
+const Main = ({ children }: Props) => {
   return (
     <Container>
-    <MainContent>
-      {children}
-    </MainContent>
+      <MainContent>
+        {children}
+      </MainContent>
     </Container>
   )
 }
