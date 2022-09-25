@@ -1,12 +1,16 @@
 import React from 'react'
+import Heading from '../components/heading'
 import Layout from '../components/layout'
+import Main from '../components/main'
 
 const ResearchPage = () => {
   return (
     <Layout>
-      <main>
-        <h1>Research</h1>
-      </main>
+      <Main>
+        <Heading>
+          Research
+        </Heading>
+      </Main>
     </Layout>
   )
 }

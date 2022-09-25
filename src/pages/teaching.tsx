@@ -1,12 +1,16 @@
 import React from 'react'
+import Heading from '../components/heading'
 import Layout from '../components/layout'
+import Main from '../components/main'
 
 const TeachingPage = () => {
   return (
     <Layout>
-      <main>
-        <h1>Teaching</h1>
-      </main>
+      <Main>
+        <Heading>
+          Teaching
+        </Heading>
+      </Main>
     </Layout>
   )
 }

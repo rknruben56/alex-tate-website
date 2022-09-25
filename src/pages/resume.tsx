@@ -1,12 +1,16 @@
 import React from 'react'
+import Heading from '../components/heading'
 import Layout from '../components/layout'
+import Main from '../components/main'
 
 const ResumePage = () => {
   return (
     <Layout>
-      <main>
-        <h1>CV & Publications</h1>
-      </main>
+      <Main>
+        <Heading>
+          CV & Publications
+        </Heading>
+      </Main>
     </Layout>
   )
 }

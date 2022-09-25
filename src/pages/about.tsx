@@ -1,18 +1,14 @@
 import React from 'react'
+import Heading from '../components/heading'
 import Layout from '../components/layout'
-
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
+import Main from '../components/main'
 
 const AboutPage = () => {
   return (
     <Layout>
-      <main>
-        <h1 style={headingStyles}>About Me</h1>
-      </main>
+      <Main>
+        <Heading>About Me</Heading>
+      </Main>
     </Layout>
   )
 }
