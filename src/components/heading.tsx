@@ -12,7 +12,7 @@ const HeadingContent = styled.h1`
   font-weight: bold;
 `
 
-const Heading = ({children}: Props) => {
+const Heading = ({ children }: Props) => {
   return (
     <HeadingContent>
       {children}

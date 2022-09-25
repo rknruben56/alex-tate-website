@@ -5,7 +5,7 @@ interface Props {
     children?: ReactNode
 }
 
-const Layout = ({children}: Props) => {
+const Layout = ({ children }: Props) => {
     return (
         <div>
             <Header />
