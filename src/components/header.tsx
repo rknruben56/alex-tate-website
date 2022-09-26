@@ -17,7 +17,7 @@ const LinkText = styled.span`
 const Header = () => {
    return (
       <Navbar bg="light" expand="lg">
-         <Container className='mt-5 px-4 px-md-5'>
+         <Container className='mt-5 px-3 px-md-5'>
             <Navbar.Brand as={Link} to="/">
                <Brand>Alexandra Tate, PhD</Brand>
             </Navbar.Brand>
