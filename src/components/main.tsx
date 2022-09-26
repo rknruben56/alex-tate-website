@@ -9,6 +9,7 @@ interface Props {
 const MainContent = styled.main`
   color: #232129;
   padding-top: 60px;
+  padding-bottom: 150px;
 `;
 
 const Main = ({ children }: Props) => {
