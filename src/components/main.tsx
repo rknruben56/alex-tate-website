@@ -9,7 +9,6 @@ interface Props {
 const MainContent = styled.main`
   color: #232129;
   padding-top: 60px;
-  font-family: "playfair, roboto, sans-serif, serif";
 `;
 
 const Main = ({ children }: Props) => {

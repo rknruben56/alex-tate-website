@@ -7,8 +7,7 @@ interface Props {
 
 const HeadingContent = styled.h1`
   margin-top: 0;
-  margin-bottom: 64px;
-  font-family: "playfair, roboto, sans-serif, serif";
+  margin-bottom: 80px;
   font-weight: bold;
 `
 
