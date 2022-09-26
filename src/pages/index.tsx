@@ -13,10 +13,7 @@ const IndexPage = () => {
       <Main>
         <Container fluid>
           <Row>
-            <Col xs={{ span: 12, order: 2 }} md={{span: 8, order: 1 }}>
-              <h1>
-                I'm a Research Director in the Section of Hospital Medicine at the University of Chicago.
-              </h1>
+            <Col xs={{ span: 12, order: 2 }} md={{span: 9, order: 1 }}>
               <Paragraph>
                 As a medical sociologist, my research uses mixed methods approaches to examine the role of medicine in health for aging patients in the U.S. My interests lie in the complexities of doctor-patient interaction and the related implications for care of older adults, with a current focus on the relationship between clinicians and patients with complex illnesses. My current research projects investigate end-of-life decision making among high utilizers of health care, public perceptions of death and dying, and the impact of the pandemic on end-of-life decision-making.
               </Paragraph>
@@ -24,7 +21,7 @@ const IndexPage = () => {
                 I have presented my work at the American Sociological Association, the National Communication Association, and the International Conference on Conversation Analysis, among others. I also serve as a reviewer for the American Journal of Sociology, Journal of Health & Social Behavior, Social Science and Medicine, Sociology of Health & Illness, and the Journal of Palliative Medicine.
               </Paragraph>
             </Col>
-            <Col xs={{ span: 12, order: 1 }} md={{span: 4, order: 2 }}>
+            <Col xs={{ span: 12, order: 1 }} md={{span: 3, order: 2 }}>
               <Image rounded fluid src={profile} alt="profile"></Image>
             </Col>
           </Row>

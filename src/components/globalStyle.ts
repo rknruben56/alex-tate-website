@@ -2,7 +2,8 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   body {
-    font-family: Playfair Display, Roboto;
+    font-family: Poppins, Roboto;
+    font-weight: 200;
   }
   img {
     margin-bottom: .5em;

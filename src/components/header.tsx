@@ -6,23 +6,39 @@ import styled from 'styled-components'
 import { Link } from 'gatsby'
 
 const Brand = styled.h1`
-  font-weight: bold;
+  font-weight: 600;
+`;
+
+const LinkText = styled.span`
+   font-weight: 400;
 `;
 
 
 const Header = () => {
    return (
       <Navbar bg="light" expand="lg">
-         <Container  className='mt-5'>
+         <Container className='mt-5 px-4 px-md-5'>
             <Navbar.Brand as={Link} to="/">
                <Brand>Alexandra Tate, PhD</Brand>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                <Nav>
-                  <Nav.Link as={Link} to="/resume" eventKey="resume">CV & Publications</Nav.Link>
-                  <Nav.Link as={Link} to="/research" eventKey="research">Research</Nav.Link>
-                  <Nav.Link as={Link} to="/teaching" eventKey="teaching">Teaching</Nav.Link>
+                  <Nav.Link as={Link} to="/resume" eventKey="resume">
+                     <LinkText>
+                        CV & Publications
+                     </LinkText>
+                  </Nav.Link>
+                  <Nav.Link as={Link} to="/research" eventKey="research">
+                     <LinkText>
+                        Research
+                     </LinkText>
+                  </Nav.Link>
+                  <Nav.Link as={Link} to="/teaching" eventKey="teaching">
+                     <LinkText>
+                        Teaching
+                     </LinkText>
+                  </Nav.Link>
                </Nav>
             </Navbar.Collapse>
          </Container>
