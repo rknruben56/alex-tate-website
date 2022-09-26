@@ -18,8 +18,8 @@ const config: GatsbyConfig = {
         preconnect: [`https://fonts.googleapis.com`, `https://fonts.gstatic.com`],
         web: [
           {
-            name: `Playfair Display`,
-            file: `https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap`,
+            name: `Poppins`,
+            file: `https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap`,
           },
           {
             name: `Roboto`,

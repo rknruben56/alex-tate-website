@@ -1,4 +1,5 @@
 import React, { ReactNode } from "react"
+import { Container } from "react-bootstrap"
 import GlobalStyle from "./globalStyle"
 import Header from './header'
 
@@ -11,7 +12,9 @@ const Layout = ({ children }: Props) => {
         <div>
             <GlobalStyle />
             <Header />
-            {children}
+            <Container className="p-4">
+                {children}
+            </Container>
         </div>
     )
 }
