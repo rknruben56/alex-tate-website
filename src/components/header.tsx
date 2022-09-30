@@ -24,14 +24,19 @@ const Header = () => {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                <Nav>
-                  <Nav.Link as={Link} to="/resume" eventKey="resume">
+                  <Nav.Link as={Link} to="/" eventKey="aboutMe">
                      <LinkText>
-                        CV & Publications
+                        About Me
                      </LinkText>
                   </Nav.Link>
                   <Nav.Link as={Link} to="/research" eventKey="research">
                      <LinkText>
                         Research
+                     </LinkText>
+                  </Nav.Link>
+                  <Nav.Link as={Link} to="/resume" eventKey="resume">
+                     <LinkText>
+                        CV & Publications
                      </LinkText>
                   </Nav.Link>
                   <Nav.Link as={Link} to="/teaching" eventKey="teaching">
