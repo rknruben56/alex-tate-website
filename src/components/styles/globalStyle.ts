@@ -8,6 +8,9 @@ const GlobalStyle = createGlobalStyle`
   img {
     margin-bottom: .5em;
   }
+  a {
+    color: black;
+  }
 `
 
 export default GlobalStyle

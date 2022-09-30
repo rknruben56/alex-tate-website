@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react"
 import { Container } from "react-bootstrap"
-import GlobalStyle from "./globalStyle"
+import GlobalStyle from "./styles/globalStyle"
 import Header from './header'
 import Footer from './footer'
 
