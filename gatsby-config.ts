@@ -19,7 +19,7 @@ const config: GatsbyConfig = {
         web: [
           {
             name: `Poppins`,
-            file: `https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap`,
+            file: `https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap`,
           },
           {
             name: `Roboto`,
