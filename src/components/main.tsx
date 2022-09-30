@@ -16,7 +16,9 @@ const Main = ({ children }: Props) => {
   return (
     <Container>
       <MainContent>
-        {children}
+        <Container fluid>
+          {children}
+        </Container>
       </MainContent>
     </Container>
   )
