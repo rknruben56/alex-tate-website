@@ -16,7 +16,7 @@ const Footer = () => {
       <div className="text-center p-3">
         <Row className="justify-content-md-center">
           <Col xs lg={2}>
-            <a className="text-dark" href="mailto:alt108@gmail.com">Email</a>
+            <a className="text-dark" href="mailto:atate@uchicago.edu">Email</a>
           </Col>
           <Col xs lg={2}>
             <a className="text-dark" href="https://www.linkedin.com/in/alexandra-tate-phd-79763b18" target="_blank" rel="noopener noreferrer">LinkedIn</a>

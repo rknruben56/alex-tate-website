@@ -6,7 +6,7 @@ interface Props {
 }
 
 const ParagrahContent = styled.p`
-  font-size: 1.1em;
+  font-weight: 300;
 `
 
 const Paragraph = ({ children }: Props) => {
