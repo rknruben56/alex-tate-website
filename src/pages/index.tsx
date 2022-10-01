@@ -2,7 +2,6 @@ import * as React from "react"
 import type { HeadFC } from "gatsby"
 import Layout from "../components/layout"
 import Main from "../components/main"
-import 'bootstrap/dist/css/bootstrap.min.css'
 import { Col, Image, Row } from "react-bootstrap"
 import profile from '../images/profile.jpeg'
 import Paragraph from "../components/paragraph"
