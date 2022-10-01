@@ -25,7 +25,7 @@ const IndexPage = () => {
           <Col xs={{ span: 12, order: 2 }} md={{ span: 8, order: 1 }} className="pt-4 pt-md-0">
             <Paragraph>
               <Headerline>
-                I am a sociologist studying decision-making and my research centers on how social actors with different agendas and relationships work together to make difficult decisions.&nbsp;
+                I am a sociologist who studies decision-making. My research centers on how social actors with different agendas and relationships work together to make difficult decisions.&nbsp;
               </Headerline>
               I am particularly focused on doctor-patient interactions and relationships, and how these impact decisions about care near the end of life. To do this, I bring together conversation analytic, ethnographic, causal inference, and natural language processing methods to study the complex machinery of how decisions are made and their impact on larger social issues such as health disparities, mortality, and relations with institutions.
             </Paragraph>
