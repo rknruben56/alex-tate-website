@@ -7,15 +7,11 @@ import { Col, Image, Row } from "react-bootstrap"
 import profile from '../images/profile.jpeg'
 import Paragraph from "../components/paragraph"
 import { Link } from 'gatsby'
-import styled from 'styled-components'
+import { Headerline } from "../components/styles/headerStyle"
 
 const linkStyle = {
   color: 'black'
 }
-
-const Headerline = styled.span`
-  font-weight: bold;
-`
 
 const IndexPage = () => {
   return (
