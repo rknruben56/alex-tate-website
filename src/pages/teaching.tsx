@@ -13,7 +13,7 @@ const TeachingPage = () => {
           My growth as a sociologist has been inexorably linked to my teaching experiences. My pedagogical foci are guided by the core principle that studying the social world requires that we let go of taking things for granted and “known” facts and instead question what allows different parts of our social world to make sense to us. I ask students to use their sociological imagination to interrogate their position in the social world, and how their own values and behaviors shape how they perceive social facts. Whether teaching methods, theory, or coursework in a specific area, I believe that incorporating students’ unique backgrounds and experiences into classroom learning facilitates valuable engagement with course material and has been a source of important growth for me as a scholar. My commitment to teaching is reflected by both outstanding teaching reviews from the University of Chicago, Temple University, and UCLA, and an award for excellence in teaching from UCLA. My approach to course instruction is dedicated to emphasizing relevancy, stressing fact-based inquiry, promoting inclusion, and empowering students in their own learning.
         </Paragraph>
         <Paragraph>
-          Across my teaching career, I have taught the following courses:
+          <b>Across my teaching career, I have taught the following courses:</b>
         </Paragraph>
         <h3>University of Chicago</h3>
         <StyledList>
