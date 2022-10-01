@@ -1,4 +1,5 @@
 import React, { ReactNode } from "react"
+import 'bootstrap/dist/css/bootstrap.min.css'
 import { Container } from "react-bootstrap"
 import GlobalStyle from "./styles/globalStyle"
 import Header from './header'
