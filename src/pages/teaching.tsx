@@ -3,6 +3,7 @@ import Layout from '../components/layout'
 import Main from '../components/main'
 import Paragraph from '../components/paragraph'
 import { StyledList, StyledListItem } from '../components/styles/listStyle'
+import { SEO } from '../components/seo'
 
 const TeachingPage = () => {
   return (
@@ -59,6 +60,8 @@ const TeachingPage = () => {
   )
 }
 
-export const Head = () => <title>Teaching</title>
+export const Head = () => (
+  <SEO title="Teaching" />
+)
 
 export default TeachingPage

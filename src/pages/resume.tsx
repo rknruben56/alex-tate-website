@@ -5,6 +5,7 @@ import cv from '../content/Tate_CV_2022.pdf'
 import { Row } from 'react-bootstrap'
 import styled from 'styled-components'
 import { StyledList, StyledListItem, StyledListLink } from '../components/styles/listStyle'
+import { SEO } from '../components/seo'
 
 const CVLink = styled.a`
   font-weight: 400;
@@ -75,6 +76,8 @@ const ResumePage = () => {
   )
 }
 
-export const Head = () => <title>CV & Publications</title>
+export const Head = () => (
+  <SEO title="CV & Publications" />
+)
 
 export default ResumePage
