@@ -3,6 +3,7 @@ import Layout from '../components/layout'
 import Main from '../components/main'
 import Paragraph from '../components/paragraph'
 import { Headerline } from '../components/styles/headerStyle'
+import { SEO } from '../components/seo'
 
 const ResearchPage = () => {
   return (
@@ -25,6 +26,8 @@ const ResearchPage = () => {
   )
 }
 
-export const Head = () => <title>Research</title>
+export const Head = () => (
+  <SEO title="Research" />
+)
 
 export default ResearchPage
