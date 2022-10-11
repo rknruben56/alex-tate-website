@@ -2,8 +2,8 @@ import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `Alexandra Tate Website`,
-    description: `Personal website for Alexandra Tate PhD`,
+    title: `Alexandra Tate`,
+    description: `Sociologist Dr. Alexandra Tate`,
     twitterUsername: `@cestmoialex`,
     siteUrl: `https://www.alexandra-tate.com`
   },

@@ -12,10 +12,6 @@ const CVLink = styled.a`
   font-size: 1.2rem;
 `
 
-const ArticleTitle = styled.b`
-  font-weight: 600;
-`
-
 const ResumePage = () => {
   return (
     <Layout>
@@ -38,7 +34,7 @@ const ResumePage = () => {
         <h3>Publications</h3>
         <StyledList>
           <StyledListItem>
-            Stivers, S. and Tate, A. (In press) <ArticleTitle>“The Role of Healthcare Communication in Treatment Outcomes”</ArticleTitle><i>Annual Review of Linguistics.</i>
+            Stivers, S. and Tate, A. (In press) <StyledListLink href="https://www.annualreviews.org/doi/pdf/10.1146/annurev-linguistics-030521-054400" target="_blank" rel="noopener noreferrer">“The Role of Healthcare Communication in Treatment Outcomes”</StyledListLink> <i>Annual Review of Linguistics.</i>
           </StyledListItem>
           <StyledListItem>
             Tate, A. (2022) <StyledListLink href="https://www.sciencedirect.com/science/article/abs/pii/S027795362200435X" target="_blank" rel="noopener noreferrer">"Death and the Treatment Imperative: Decision-making in late-stage cancer."</StyledListLink> <i>Social Science and Medicine. 306.</i> 115129.
