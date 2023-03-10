@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout'
 import Main from '../components/main'
-import cv from '../content/Tate_CV_2022.pdf'
+import cv from '../content/Tate_CV_2023.pdf'
 import { Row } from 'react-bootstrap'
 import styled from 'styled-components'
 import { StyledList, StyledListItem, StyledListLink } from '../components/styles/listStyle'
@@ -66,6 +66,16 @@ const ResumePage = () => {
           <StyledListItem>
             Snyder, K.A. & A. Tate. (2013). <StyledListLink href="https://www.academia.edu/2080511/_What_to_Do_Now_How_Women_with_Breast_Cancer_Make_Fertility_Preservation_Decisions_" target="_blank" rel="noopener noreferrer">“What To Do Now? How Women with Breast Cancer Make Fertility Preservation Decisions.”</StyledListLink> <i>Journal of Family Planning and Reproductive Health Care. 39</i>(1): 172-178.
           </StyledListItem>
+        </StyledList>
+        <h3>Manuscripts under review</h3>
+        <StyledList>
+          <StyledListItem>Tate, A. and K.L. Spencer. (Revise and resubmit). “Negotiations Gone Awry: The importance of interaction in a high-stakes treatment negotiation with an engaged patient.”</StyledListItem>
+          <StyledListItem>Molitch-Hou, E., Zhang, H. Gala, P. and Tate A. (Under review). “Impact of the COVID-19 public health crisis and a structured COVID Unit on physician behaviors in code status ordering."</StyledListItem>
+        </StyledList>
+        <h3>Manuscripts in preparation</h3>
+        <StyledList>
+          <StyledListItem>Tate, A. and T. Stivers. “Collusion in the clinic: How doctors and patients construct an imperative to treat.”</StyledListItem>
+          <StyledListItem>Tate, A. “Using Clinical (Un)Certainty in Complex Decisions about Cancer Care.”</StyledListItem>
         </StyledList>
       </Main>
     </Layout>
