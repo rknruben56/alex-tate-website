@@ -19,7 +19,7 @@ const TeachingPage = () => {
         <h3>University of Chicago</h3>
         <StyledList>
           <StyledListItem>
-            In 2023: <i>Death, Dying, and Late life</i>, Department of Comparative Human Development
+            2023: <i>Death and Dying</i>, Department of Comparative Human Development
           </StyledListItem>
           <StyledListItem>
             2022: <i>Introduction to Health & Society</i>, Department of Comparative Human Development
