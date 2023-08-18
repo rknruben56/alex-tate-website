@@ -34,7 +34,10 @@ const ResumePage = () => {
         <h3>Publications</h3>
         <StyledList>
           <StyledListItem>
-            Stivers, S. and Tate, A. (In press) <StyledListLink href="https://www.annualreviews.org/doi/pdf/10.1146/annurev-linguistics-030521-054400" target="_blank" rel="noopener noreferrer">“The Role of Healthcare Communication in Treatment Outcomes”</StyledListLink> <i>Annual Review of Linguistics.</i>
+            Tate, A. and K.L. Spencer. (2023) <StyledListLink>"High Stakes Treatment Negotiations Gone Awry: The Importance of Interactions for Understanding Treatment Advocacy and Patient Resistance."</StyledListLink> Journal of Health and Social Behavior.
+          </StyledListItem>
+          <StyledListItem>
+            Stivers, S. and Tate, A. (2023) <StyledListLink href="https://www.annualreviews.org/doi/pdf/10.1146/annurev-linguistics-030521-054400" target="_blank" rel="noopener noreferrer">“The Role of Healthcare Communication in Treatment Outcomes”</StyledListLink> <i>Annual Review of Linguistics.</i> 9: 233-252
           </StyledListItem>
           <StyledListItem>
             Tate, A. (2022) <StyledListLink href="https://www.sciencedirect.com/science/article/abs/pii/S027795362200435X" target="_blank" rel="noopener noreferrer">"Death and the Treatment Imperative: Decision-making in late-stage cancer."</StyledListLink> <i>Social Science and Medicine. 306.</i> 115129.
@@ -69,7 +72,6 @@ const ResumePage = () => {
         </StyledList>
         <h3>Manuscripts under review</h3>
         <StyledList>
-          <StyledListItem>Tate, A. and K.L. Spencer. (Revise and resubmit). “Negotiations Gone Awry: The importance of interaction in a high-stakes treatment negotiation with an engaged patient.”</StyledListItem>
           <StyledListItem>Molitch-Hou, E., Zhang, H. Gala, P. and Tate A. (Under review). “Impact of the COVID-19 public health crisis and a structured COVID Unit on physician behaviors in code status ordering."</StyledListItem>
         </StyledList>
         <h3>Manuscripts in preparation</h3>
