@@ -34,7 +34,7 @@ const ResumePage = () => {
         <h3>Publications</h3>
         <StyledList>
           <StyledListItem>
-            Tate, A. and K.L. Spencer. (2023) “"High Stakes Treatment Negotiations Gone Awry: The Importance of Interactions for Understanding Treatment Advocacy and Patient Resistance.” Journal of Health and Social Behavior.
+            Tate, A. and K.L. Spencer. (2023) <StyledListLink>"High Stakes Treatment Negotiations Gone Awry: The Importance of Interactions for Understanding Treatment Advocacy and Patient Resistance."</StyledListLink> Journal of Health and Social Behavior.
           </StyledListItem>
           <StyledListItem>
             Stivers, S. and Tate, A. (2023) <StyledListLink href="https://www.annualreviews.org/doi/pdf/10.1146/annurev-linguistics-030521-054400" target="_blank" rel="noopener noreferrer">“The Role of Healthcare Communication in Treatment Outcomes”</StyledListLink> <i>Annual Review of Linguistics.</i> 9: 233-252
