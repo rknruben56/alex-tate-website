@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 import Layout from '../components/layout'
 import Main from '../components/main'
 import cv from '../content/Tate_CV_2023.pdf'
@@ -8,6 +8,7 @@ import { StyledList, StyledListItem, StyledListLink } from '../components/styles
 import { SEO } from '../components/seo'
 import { graphql } from 'gatsby'
 import { renderRichText } from 'gatsby-source-contentful/rich-text'
+import { Options } from "@contentful/rich-text-react-renderer"
 import { BLOCKS } from '@contentful/rich-text-types';
 
 const CVLink = styled.a`
@@ -15,9 +16,9 @@ const CVLink = styled.a`
   font-size: 1.2rem;
 `
 
-const options = {
+const options: Options = {
   renderNode: {
-    [BLOCKS.PARAGRAPH]: (node, children) => <span>{children}</span>
+    [BLOCKS.PARAGRAPH]: (_node, children: ReactNode) => <span>{children}</span>
   }
 }
 
@@ -46,7 +47,7 @@ const ResumePage = ({data}) => {
         <StyledList>
           {publications.map(p => (
             <StyledListItem key={p.id}>
-            {p.authors} ({p.year}) <StyledListLink href={p.link}>"{p.title}"</StyledListLink> {renderRichText(p.publication, options)}
+            {p.authors} ({p.year}) <StyledListLink href={p.link} target="_blank" rel="noopener noreferrer">"{p.title}"</StyledListLink> {renderRichText(p.publication, options)}
             </StyledListItem>
           ))}
         </StyledList>
