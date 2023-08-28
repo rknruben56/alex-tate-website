@@ -23,7 +23,7 @@ const options: Options = {
 }
 
 const ResumePage = ({data}) => {
-  const publications = data.allContentfulPublication.nodes
+  const publications = data.allContentfulPublication.nodes.sort((a, b) => b.createdAt - a.createdAt)
 
   return (
     <Layout>
@@ -47,7 +47,7 @@ const ResumePage = ({data}) => {
         <StyledList>
           {publications.map(p => (
             <StyledListItem key={p.id}>
-            {p.authors} ({p.year}) <StyledListLink href={p.link} target="_blank" rel="noopener noreferrer">"{p.title}"</StyledListLink> {renderRichText(p.publication, options)}
+            {p.authors} {p.year && <>({p.year})</>} <StyledListLink href={p.link} target="_blank" rel="noopener noreferrer">"{p.title}"</StyledListLink> {renderRichText(p.publication, options)}
             </StyledListItem>
           ))}
         </StyledList>
@@ -80,6 +80,7 @@ query Publications {
       year
       title
       link
+      createdAt
       publication {
         raw
       }
