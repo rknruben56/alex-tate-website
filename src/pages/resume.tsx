@@ -10,6 +10,7 @@ import { graphql } from 'gatsby'
 import { renderRichText } from 'gatsby-source-contentful/rich-text'
 import { Options } from "@contentful/rich-text-react-renderer"
 import { BLOCKS } from '@contentful/rich-text-types';
+import { sortByDateDesc } from '../utils/utils'
 
 const CVLink = styled.a`
   font-weight: 400;
@@ -24,7 +25,6 @@ const options: Options = {
 
 const ResumePage = ({data}) => {
   const publications = data.allContentfulPublication.nodes.sort(sortByDateDesc)
-  console.log(publications)
 
   return (
     <Layout>
@@ -89,9 +89,3 @@ query Publications {
   }
 }
 `
-
-const sortByDateDesc = (a, b) => {
-  const dateB = new Date(b.createdAt)
-  const dateA = new Date(a.createdAt)
-  return dateB.getTime() - dateA.getTime()
-}
