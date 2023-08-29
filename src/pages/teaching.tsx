@@ -4,8 +4,12 @@ import Main from '../components/main'
 import Paragraph from '../components/paragraph'
 import { StyledList, StyledListItem } from '../components/styles/listStyle'
 import { SEO } from '../components/seo'
+import { graphql } from 'gatsby'
+import { sortByDateDesc } from '../utils/utils'
 
-const TeachingPage = () => {
+const TeachingPage = ({data}) => {
+  const courses = data.allContentfulCourse.nodes.sort(sortByDateDesc)
+
   return (
     <Layout>
       <Main>
@@ -18,15 +22,11 @@ const TeachingPage = () => {
         </Paragraph>
         <h3>University of Chicago</h3>
         <StyledList>
-          <StyledListItem>
-            2023: <i>Death and Dying</i>, Department of Comparative Human Development
-          </StyledListItem>
-          <StyledListItem>
-            2022: <i>Introduction to Health & Society</i>, Department of Comparative Human Development
-          </StyledListItem>
-          <StyledListItem>
-            2021: <i>Introduction to Health & Society</i>, Department of Comparative Human Developmen
-          </StyledListItem>
+          {courses.map(c => (
+            <StyledListItem key={c.id}>
+              {c.year}: <i>{c.name}</i>, {c.department}
+            </StyledListItem>
+          ))}
         </StyledList>
         <h3>Temple University</h3>
         <StyledList>
@@ -63,5 +63,19 @@ const TeachingPage = () => {
 export const Head = () => (
   <SEO title="Teaching" />
 )
+
+export const pageQuery = graphql`
+query Courses {
+  allContentfulCourse {
+    nodes {
+      id
+      name
+      year
+      department
+      createdAt
+    }
+  }
+}
+`
 
 export default TeachingPage
