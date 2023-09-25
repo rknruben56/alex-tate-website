@@ -25,6 +25,7 @@ const options: Options = {
 
 const ResumePage = ({ data }) => {
   const publications = data.allContentfulPublication.nodes.sort(sortByDateDesc)
+  const manuscripts = data.allContentfulManuscript.nodes.sort(sortByDateDesc)
 
   return (
     <Layout>
@@ -55,14 +56,13 @@ const ResumePage = ({ data }) => {
             </StyledListItem>
           ))}
         </StyledList>
-        <h3>Manuscripts under review</h3>
-        <StyledList>
-          <StyledListItem>Molitch-Hou, E., Zhang, H. Gala, P. and Tate A. (Under review). “Impact of the COVID-19 public health crisis and a structured COVID Unit on physician behaviors in code status ordering."</StyledListItem>
-        </StyledList>
         <h3>Manuscripts in preparation</h3>
         <StyledList>
-          <StyledListItem>Tate, A. and T. Stivers. “Collusion in the clinic: How doctors and patients construct an imperative to treat.”</StyledListItem>
-          <StyledListItem>Tate, A. “Using Clinical (Un)Certainty in Complex Decisions about Cancer Care.”</StyledListItem>
+          {manuscripts.map(m => (
+            <StyledListItem key={m.id}>
+              {m.title}
+            </StyledListItem>
+          ))}
         </StyledList>
       </Main>
     </Layout>
@@ -76,7 +76,7 @@ export const Head = () => (
 export default ResumePage
 
 export const pageQuery = graphql`
-query Publications {
+query ResumeContent {
   allContentfulPublication {
     nodes {
       id
@@ -88,6 +88,13 @@ query Publications {
       publication {
         raw
       }
+    }
+  },
+  allContentfulManuscript {
+    nodes {
+      id
+      title
+      createdAt
     }
   }
 }
