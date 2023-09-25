@@ -23,7 +23,7 @@ const options: Options = {
   }
 }
 
-const ResumePage = ({data}) => {
+const ResumePage = ({ data }) => {
   const publications = data.allContentfulPublication.nodes.sort(sortByDateDesc)
 
   return (
@@ -43,12 +43,15 @@ const ResumePage = ({data}) => {
           <StyledListItem>
             MA, Sociology, University of California, Los Angeles, 2014
           </StyledListItem>
+          <StyledListItem>
+            BA, Sociology, Northwestern University, 2010
+          </StyledListItem>
         </StyledList>
         <h3>Publications</h3>
         <StyledList>
           {publications.map(p => (
             <StyledListItem key={p.id}>
-            {p.authors} {p.year && <>({p.year})</>} <StyledListLink href={p.link} target="_blank" rel="noopener noreferrer">"{p.title}"</StyledListLink> {renderRichText(p.publication, options)}
+              {p.authors} {p.year && <>({p.year})</>} <StyledListLink href={p.link} target="_blank" rel="noopener noreferrer">"{p.title}"</StyledListLink> {renderRichText(p.publication, options)}
             </StyledListItem>
           ))}
         </StyledList>
