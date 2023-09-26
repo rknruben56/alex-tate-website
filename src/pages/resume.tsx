@@ -1,7 +1,6 @@
 import React, { ReactNode } from 'react'
 import Layout from '../components/layout'
 import Main from '../components/main'
-import cv from '../content/Tate_CV_2023.pdf'
 import { Row } from 'react-bootstrap'
 import styled from 'styled-components'
 import { StyledList, StyledListItem, StyledListLink } from '../components/styles/listStyle'
@@ -26,12 +25,13 @@ const options: Options = {
 const ResumePage = ({ data }) => {
   const publications = data.allContentfulPublication.nodes.sort(sortByDateDesc)
   const manuscripts = data.allContentfulManuscript.nodes.sort(sortByDateDesc)
+  const cvLink = data.contentfulResume.pdf.url;
 
   return (
     <Layout>
       <Main>
         <Row className="text-center mb-4">
-          <CVLink href={cv} target="_blank" rel="noopener noreferrer">CV in .pdf format</CVLink>
+          <CVLink href={cvLink} target="_blank" rel="noopener noreferrer">CV in .pdf format</CVLink>
         </Row>
         <h3>Education and training</h3>
         <StyledList>
@@ -95,6 +95,13 @@ query ResumeContent {
       id
       title
       createdAt
+    }
+  },
+  contentfulResume {
+    id
+    title
+    pdf {
+      url
     }
   }
 }
