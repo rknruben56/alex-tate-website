@@ -11,6 +11,7 @@ import { renderRichText } from 'gatsby-source-contentful/rich-text'
 import { Options } from "@contentful/rich-text-react-renderer"
 import { BLOCKS } from '@contentful/rich-text-types';
 import { sortByDateDesc } from '../utils/utils'
+import { Manuscript, Publication } from '../models/Manuscript'
 
 const CVLink = styled.a`
   font-weight: 400;
@@ -24,8 +25,17 @@ const options: Options = {
 }
 
 const ResumePage = ({ data }) => {
-  const publications = data.allContentfulPublication.nodes.sort(sortByDateDesc)
-  const manuscripts = data.allContentfulManuscript.nodes.sort(sortByDateDesc)
+  const publications: Publication[] = data.allContentfulPublication.nodes.sort(sortByDateDesc)
+  const sortedManuscripts: Manuscript[] = data.allContentfulManuscript.nodes.sort(sortByDateDesc)
+  var manuscripts: Manuscript[] = []
+  var manuscriptsUnderReview: Manuscript[] = []
+  sortedManuscripts.forEach(m => {
+    if (m.underReview) {
+      manuscriptsUnderReview.push(m)
+    } else {
+      manuscripts.push(m)
+    }
+  })
 
   return (
     <Layout>
@@ -36,16 +46,19 @@ const ResumePage = ({ data }) => {
         <h3>Education and training</h3>
         <StyledList>
           <StyledListItem>
-            Postdoctoral Fellowship, University of Chicago, 2018-2020
+            Postdoctoral Fellowship, University of Chicago, (2018-2020)
           </StyledListItem>
           <StyledListItem>
-            PhD, Sociology, University of California, Los Angeles, 2018
+            PhD, Sociology, University of California, Los Angeles, (2018)
           </StyledListItem>
           <StyledListItem>
-            MA, Sociology, University of California, Los Angeles, 2014
+            MA, Sociology, University of California, Los Angeles
           </StyledListItem>
           <StyledListItem>
-            BA, Sociology, Northwestern University, 2010
+            MS, Public Health Sciences, University of Chicago
+          </StyledListItem>
+          <StyledListItem>
+            BA, Sociology, Northwestern University
           </StyledListItem>
         </StyledList>
         <h3>Publications</h3>
@@ -56,14 +69,32 @@ const ResumePage = ({ data }) => {
             </StyledListItem>
           ))}
         </StyledList>
-        <h3>Manuscripts in preparation</h3>
-        <StyledList>
-          {manuscripts.map(m => (
-            <StyledListItem key={m.id}>
-              {m.title}
-            </StyledListItem>
-          ))}
-        </StyledList>
+        {
+          manuscriptsUnderReview.length > 0 &&
+          <div>
+            <h3>Manuscripts under review</h3>
+            <StyledList>
+              {manuscriptsUnderReview.map(m => (
+                <StyledListItem key={m.id}>
+                  {m.title}
+                </StyledListItem>
+              ))}
+            </StyledList>
+          </div>
+        }
+        {
+          manuscripts.length > 0 &&
+          <div>
+            <h3>Manuscripts in preparation</h3>
+            <StyledList>
+              {manuscripts.map(m => (
+                <StyledListItem key={m.id}>
+                  {m.title}
+                </StyledListItem>
+              ))}
+            </StyledList>
+          </div>
+        }
       </Main>
     </Layout>
   )
@@ -94,6 +125,7 @@ query ResumeContent {
     nodes {
       id
       title
+      underReview
       createdAt
     }
   }
