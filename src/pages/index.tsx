@@ -20,15 +20,15 @@ const IndexPage = () => {
           <Col xs={{ span: 12, order: 2 }} md={{ span: 8, order: 1 }} className="pt-4 pt-md-0">
             <Paragraph>
               <Headerline>
-                I am a sociologist who studies decision-making. My research centers on how social actors with different agendas and relationships work together to make difficult decisions.&nbsp;
+                I am a sociologist who studies clinical decision-making.&nbsp;
               </Headerline>
-              I am particularly focused on doctor-patient interactions and relationships, and how these impact decisions about care near the end of life and in settings with uncertain prognoses. To do this, I bring together conversation analytic, ethnographic, causal inference, and natural language processing methods to study the complex machinery of how decisions are made and their impact on larger social issues such as health disparities, mortality, and relations with institutions.
+                My research leverages sociological theories and methods to understand how doctor-patient relationships and the culture of medicine shape decision-making and health outcomes with the goal of facilitating patient-centered care, improving provider training, and reducing health disparities.
             </Paragraph>
             <Paragraph>
               My work has been funded by the National Institute on Aging, the National Center for Advancing Translational Sciences, and the Institute for Translational Medicine.
             </Paragraph>
             <Paragraph>
-              I hold a PhD in Sociology from the University of California, Los Angeles. I am currently the Director of Research in the Section of Hospital Medicine and a Lecturer in the Department of Comparative Human Development at the University of Chicago. Prior to this role, I was a Postdoctoral Fellow in the Center for Health and the Social Sciences at the University of Chicago. When I’m not working, I enjoy riding my road bike, spending time at the beach, listening to NPR, and baking.
+              I hold a PhD in Sociology from the University of California, Los Angeles. I am currently the Director of Research in the Section of Hospital Medicine and a Lecturer in the Department of Comparative Human Development at the University of Chicago. Prior to this role, I was a Postdoctoral Fellow in the Center for Health and the Social Sciences at the University of Chicago. When I’m not working, I enjoy riding my road bike, spending time at the beaches of Rhode Island, reading fiction, and baking.
             </Paragraph>
             <Paragraph>
               Above, you can read my <Link to="/resume" style={linkStyle}>CV and view my publications</Link>, read more about my <Link to="/research" style={linkStyle}>research projects</Link>, and learn about my <Link to="/teaching" style={linkStyle}>teaching</Link>. Please reach out to me for article .pdfs if you are unable to access them on this site. My contact info is found below.
