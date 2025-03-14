@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react'
 import Layout from '../components/layout'
 import Main from '../components/main'
-import cv from '../content/Tate_CV_2024.pdf'
+import cv from '../content/Tate_CV_2025.pdf'
 import { Row } from 'react-bootstrap'
 import styled from 'styled-components'
 import { StyledList, StyledListItem, StyledListLink } from '../components/styles/listStyle'
