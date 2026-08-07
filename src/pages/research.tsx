@@ -11,7 +11,7 @@ const ResearchPage = () => {
       <Main>
         <h2>Research</h2>
         <Paragraph>
-          My research agenda reflects my interdisciplinary training in sociology and health services research and examines how provider-patient relationships and the culture of medicine shape the management of illness, aging, and dying in the United States. I approach this topic in two ways: 1) qualitatively analyzing doctor-patient interactions in complex clinical environments and 2) quantitatively examining care at the end of life and advance care planning.  My work contributes to fields of population health, sociology, and medical ethics by using sociological theory and methods to offer greater insight into clinical decision-making, serious illness care, and how relationships between patients and providers are built, maintained, or fall into conflict.
+          My research agenda reflects my interdisciplinary training in sociology and health services research and examines how provider-patient relationships and the culture of medicine shape the management of illness, aging, and dying in the United States. My work contributes to fields of population health, sociology, and medical ethics by using sociological theory and methods to offer greater insight into clinical decision-making, serious illness care, medical education, and how relationships between patients and providers are built, maintained, or fall into conflict.
         </Paragraph>
         <Headerline>Provider-patient interactions in complex clinical environments</Headerline>
         <Paragraph>
@@ -20,6 +20,10 @@ const ResearchPage = () => {
         <Headerline>Relationships and end-of-life care</Headerline>
         <Paragraph>
           A second strand of my work quantitatively investigates the ways that relationships (both provider-patient and patient social ties) shape end-of-life care delivery, combining video analysis with advanced training in health equity, aging, informatics, and statistical methods. In one project, I examine how coordinated medical care and stronger social ties influence patients' end-of-life experiences among frequently hospitalized patients with overlapping social needs. Initial findings from this work suggest that de-fragmented care significantly increases the odds of advance care planning documentation among vulnerable patient groups, particularly those on Medicaid. In another project examining the impact of the COVID-19 pandemic on the documentation of end-of-life care preferences, I find that intentional communication of best practices to providers on small teams can significantly reduce racial disparities, underscoring how systematic changes in healthcare delivery can address long-standing inequities while improving outcomes for vulnerable populations.
+        </Paragraph>
+        <Headerline>Medical education and clinical practice</Headerline>
+        <Paragraph>
+          A third strand of my work examines how medical education structures and institutional cultures shape physician identity, clinical decision-making, and patient-centered care delivery. Using medical sociology and organizational theory, this research investigates how training environments—including curricula, social networks, and mentorship—influence how physicians communicate with patients and navigate their professional identities. By identifying how medical education shapes clinical practice, my work points to curricular and institutional interventions that could improve patient outcomes and professional advancement for clinican-researchers.
         </Paragraph>
       </Main>
     </Layout>
