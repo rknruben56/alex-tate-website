@@ -31,10 +31,10 @@ const manuscriptsInPrep = manuscripts.filter((m) => !m.underReview);
           {p.authors} {p.year && <>({p.year})</>}{" "}
           {p.link ? (
             <a href={p.link} target="_blank" rel="noopener noreferrer">
-              "{p.title}"
+              <strong>"{p.title}"</strong>
             </a>
           ) : (
-            <>"{p.title}"</>
+            <strong>"{p.title}"</strong>
           )}{" "}
           <span set:html={p.publication} />
         </li>
