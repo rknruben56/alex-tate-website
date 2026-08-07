@@ -1,0 +1,70 @@
+---
+import Layout from "../layouts/Layout.astro";
+import publications from "../data/publications.json";
+import manuscripts from "../data/manuscripts.json";
+
+const cv = "/Tate_CV_2026.pdf";
+
+const manuscriptsUnderReview = manuscripts.filter((m) => m.underReview);
+const manuscriptsInPrep = manuscripts.filter((m) => !m.underReview);
+---
+
+<Layout title="CV & Publications" pathname="/resume">
+  <p class="cv-link">
+    <a href={cv} target="_blank" rel="noopener noreferrer">CV in .pdf format</a>
+  </p>
+
+  <h3>Education and training</h3>
+  <ul class="list">
+    <li>Postdoctoral Fellowship, University of Chicago, (2018-2020)</li>
+    <li>PhD, Sociology, University of California, Los Angeles, (2018)</li>
+    <li>MA, Sociology, University of California, Los Angeles</li>
+    <li>MS, Public Health Sciences, University of Chicago</li>
+    <li>BA, Sociology, Northwestern University</li>
+  </ul>
+
+  <h3>Publications</h3>
+  <ul class="list">
+    {
+      publications.map((p) => (
+        <li>
+          {p.authors} {p.year && <>({p.year})</>}{" "}
+          {p.link ? (
+            <a href={p.link} target="_blank" rel="noopener noreferrer">
+              "{p.title}"
+            </a>
+          ) : (
+            <>"{p.title}"</>
+          )}{" "}
+          <span set:html={p.publication} />
+        </li>
+      ))
+    }
+  </ul>
+
+  {
+    manuscriptsUnderReview.length > 0 && (
+      <div>
+        <h3>Manuscripts under review</h3>
+        <ul class="list">
+          {manuscriptsUnderReview.map((m) => (
+            <li>{m.title}</li>
+          ))}
+        </ul>
+      </div>
+    )
+  }
+
+  {
+    manuscriptsInPrep.length > 0 && (
+      <div>
+        <h3>Manuscripts in preparation</h3>
+        <ul class="list">
+          {manuscriptsInPrep.map((m) => (
+            <li>{m.title}</li>
+          ))}
+        </ul>
+      </div>
+    )
+  }
+</Layout>

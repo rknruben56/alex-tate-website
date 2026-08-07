@@ -4,4 +4,4 @@ Personal website for Dr. Alexandra Tate
 
 # Tech
 
-[Gatsby](https://www.gatsbyjs.com/) website deployed using [Netlify](https://www.netlify.com/). 
+Static [Astro](https://astro.build/) website deployed using [Netlify](https://www.netlify.com/). Content lives in JSON files under `src/data/` — no CMS required.
