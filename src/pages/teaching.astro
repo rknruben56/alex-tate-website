@@ -1,0 +1,72 @@
+---
+import Layout from "../layouts/Layout.astro";
+import courses from "../data/courses.json";
+---
+
+<Layout title="Teaching" pathname="/teaching">
+  <h2>Teaching</h2>
+  <p>
+    My growth as a sociologist has been inexorably linked to my teaching
+    experiences. My teaching is guided by the core principle that studying the
+    social world requires that we let go of taking things for granted and
+    "known" facts and instead question what allows different parts of our social
+    world to make sense to us. I ask students to use their sociological
+    imagination to interrogate their position in the social world, and how their
+    own values and behaviors shape how they perceive social facts. Whether
+    teaching methods, theory, or coursework in a specific area, I believe that
+    incorporating students' unique backgrounds and experiences into learning
+    facilitates valuable engagement with course material. My commitment to
+    teaching is reflected by both outstanding teaching reviews from the
+    University of Chicago, Temple University, and UCLA, and an award for
+    excellence in teaching from UCLA. My approach emphasizes relevancy, stresses
+    fact-based inquiry, promotes inclusion, and empowers students in their own
+    learning.
+  </p>
+  <p>
+    <b>Across my teaching career, I have taught the following courses:</b>
+  </p>
+
+  <h3>University of Chicago</h3>
+  <ul class="list">
+    {
+      courses.map((c) => (
+        <li>
+          {c.year}: <i>{c.name}</i>, {c.department}
+        </li>
+      ))
+    }
+  </ul>
+
+  <h3>Temple University</h3>
+  <ul class="list">
+    <li>
+      2018: <i>Gender and Activism</i>, Gender, Sexuality and Women's Studies
+      Program
+    </li>
+    <li>2017: <i>Introduction to Sociology</i>, Department of Sociology</li>
+  </ul>
+
+  <h3>University of California, Los Angeles</h3>
+  <ul class="list">
+    <li>
+      2016: <i>Death, Suicide and Trauma</i>, Department of Sociology (TA to
+      Stefan Timmermans)
+    </li>
+    <li>
+      2016: <i>Introduction to Sociology</i>, Department of Sociology (TA to
+      William Roy)
+    </li>
+    <li>
+      2016: <i>Talk and Social Institutions</i>, Department of Sociology (TA to
+      John Heritage and Steven Clayman)
+    </li>
+    <li>
+      2014: <i>The Self and Society</i>, Department of Sociology (TA to Jack
+      Katz)
+    </li>
+    <li>
+      2013: <i>Human Biology and Society</i>, Institute for Society and Genetics
+      (TA to Hannah Landecker)
+    </li>
+  </ul>
+</Layout>

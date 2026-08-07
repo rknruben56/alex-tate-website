@@ -1,0 +1,36 @@
+---
+const links = [
+  { href: "/", label: "About Me" },
+  { href: "/research", label: "Research" },
+  { href: "/resume", label: "CV & Publications" },
+  { href: "/teaching", label: "Teaching" },
+];
+---
+
+<nav class="navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <h1>Alexandra Tate, PhD</h1>
+    </a>
+    <button
+      class="nav-toggle"
+      aria-label="Toggle navigation"
+      aria-expanded="false"
+      aria-controls="nav-links"
+    >
+      ☰
+    </button>
+    <div class="nav-links" id="nav-links">
+      {links.map((link) => <a href={link.href}>{link.label}</a>)}
+    </div>
+  </div>
+</nav>
+
+<script>
+  const toggle = document.querySelector(".nav-toggle");
+  const menu = document.getElementById("nav-links");
+  toggle?.addEventListener("click", () => {
+    const open = menu?.classList.toggle("open");
+    toggle.setAttribute("aria-expanded", String(!!open));
+  });
+</script>
