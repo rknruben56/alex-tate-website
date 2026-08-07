@@ -11,10 +11,10 @@ interface Props {
 
 const Layout = ({ children }: Props) => {
     return (
-        <div>
+        <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
             <GlobalStyle />
             <Header />
-            <Container className="px-1 p-md-4">
+            <Container className="px-1 p-md-4" style={{ flex: 1 }}>
                 {children}
             </Container>
             <Footer />

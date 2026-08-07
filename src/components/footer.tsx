@@ -3,11 +3,8 @@ import styled from 'styled-components'
 import { Row, Col } from 'react-bootstrap'
 
 const FooterContent = styled.footer`
-  position: relative;
-  margin-top: -100px;
-  height: 100px;
-  clear:both;
-  padding-top:20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 `
 
 const Footer = () => {
