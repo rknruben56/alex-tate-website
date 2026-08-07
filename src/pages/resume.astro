@@ -1,7 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import publications from "../data/publications.json";
-import manuscripts from "../data/manuscripts.json";
+import publicationsData from "../data/publications.json";
+import manuscriptsData from "../data/manuscripts.json";
+
+const publications = publicationsData.publications;
+const manuscripts = manuscriptsData.manuscripts;
 
 const cv = "/Tate_CV_2026.pdf";
 

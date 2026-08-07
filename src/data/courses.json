@@ -1,22 +1,24 @@
-[
-  {
-    "year": "2023-2024",
-    "name": "Health Policy Lab",
-    "department": "Harris School of Public Policy"
-  },
-  {
-    "year": "2023-current",
-    "name": "Death and Dying",
-    "department": "Department of Comparative Human Development"
-  },
-  {
-    "year": "2022",
-    "name": "Introduction to Health & Society",
-    "department": "Department of Comparative Human Development"
-  },
-  {
-    "year": "2021",
-    "name": "Introduction to Health & Society",
-    "department": "Department of Comparative Human Development"
-  }
-]
+{
+  "courses": [
+    {
+      "year": "2023-2024",
+      "name": "Health Policy Lab",
+      "department": "Harris School of Public Policy"
+    },
+    {
+      "year": "2023-current",
+      "name": "Death and Dying",
+      "department": "Department of Comparative Human Development"
+    },
+    {
+      "year": "2022",
+      "name": "Introduction to Health & Society",
+      "department": "Department of Comparative Human Development"
+    },
+    {
+      "year": "2021",
+      "name": "Introduction to Health & Society",
+      "department": "Department of Comparative Human Development"
+    }
+  ]
+}
