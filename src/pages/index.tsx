@@ -22,7 +22,7 @@ const IndexPage = () => {
               <Headerline>
                 I am a sociologist who studies clinical decision-making.&nbsp;
               </Headerline>
-                My research leverages sociological theories and methods to understand how doctor-patient relationships and the culture of medicine shape decision-making and health outcomes with the goal of facilitating patient-centered care, improving provider training, and reducing health disparities.
+                My research leverages sociological theories and methods to understand how doctor-patient relationships and the culture of medicine shape decision-making, health outcomes, and medical training, with the goal of facilitating patient-centered care, improving clinician training, and reducing health disparities.
             </Paragraph>
             <Paragraph>
               My work has been funded by the National Institute on Aging, the National Center for Advancing Translational Sciences, and the Institute for Translational Medicine.
