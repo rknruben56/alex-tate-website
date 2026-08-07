@@ -1,0 +1,72 @@
+backend:
+  name: github
+  repo: rknruben56/alex-tate-website
+  branch: main # deploy branch — commits from the CMS land here
+
+# Enables local testing via `npx decap-server` (no auth, edits your working tree).
+local_backend: true
+
+media_folder: public
+public_folder: /
+
+collections:
+  - name: content
+    label: Site Content
+    files:
+      - name: publications
+        label: Publications
+        file: src/data/publications.json
+        format: json
+        fields:
+          - name: publications
+            label: Publications
+            label_singular: Publication
+            widget: list
+            fields:
+              - { name: authors, label: Authors, widget: string }
+              - { name: year, label: Year, widget: string }
+              - { name: title, label: Title, widget: string }
+              - {
+                  name: link,
+                  label: Link (leave blank to render title without a hyperlink),
+                  widget: string,
+                  required: false,
+                  default: "",
+                }
+              - {
+                  name: publication,
+                  label: "Publication (HTML allowed, e.g. <em>Journal</em>, 12(3), 45-67.)",
+                  widget: string,
+                }
+
+      - name: manuscripts
+        label: Manuscripts
+        file: src/data/manuscripts.json
+        format: json
+        fields:
+          - name: manuscripts
+            label: Manuscripts
+            label_singular: Manuscript
+            widget: list
+            fields:
+              - { name: title, label: Title, widget: string }
+              - {
+                  name: underReview,
+                  label: "Under review? (off = in preparation)",
+                  widget: boolean,
+                  default: false,
+                }
+
+      - name: courses
+        label: Courses (University of Chicago)
+        file: src/data/courses.json
+        format: json
+        fields:
+          - name: courses
+            label: Courses
+            label_singular: Course
+            widget: list
+            fields:
+              - { name: year, label: Year, widget: string }
+              - { name: name, label: Course name, widget: string }
+              - { name: department, label: Department, widget: string }
