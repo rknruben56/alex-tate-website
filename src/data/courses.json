@@ -1,7 +1,12 @@
 {
   "courses": [
     {
-      "year": "2023-2024",
+      "year": "2027",
+      "name": "Learning to Die (co-taught with Maria Anna Mariani)",
+      "department": "Neubauer Collegium for Culture and Ideas"
+    },
+    {
+      "year": "2023-current",
       "name": "Health Policy Lab",
       "department": "Harris School of Public Policy"
     },
