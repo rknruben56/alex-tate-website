@@ -2,11 +2,12 @@
 import Layout from "../layouts/Layout.astro";
 import publicationsData from "../data/publications.json";
 import manuscriptsData from "../data/manuscripts.json";
+import resumeData from "../data/resume.json";
 
 const publications = publicationsData.publications;
 const manuscripts = manuscriptsData.manuscripts;
 
-const cv = "/Tate_CV_2026.pdf";
+const cv = resumeData.cv;
 
 const manuscriptsUnderReview = manuscripts.filter((m) => m.underReview);
 const manuscriptsInPrep = manuscripts.filter((m) => !m.underReview);

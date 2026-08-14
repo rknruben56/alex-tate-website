@@ -70,3 +70,14 @@ collections:
               - { name: year, label: Year, widget: string }
               - { name: name, label: Course name, widget: string }
               - { name: department, label: Department, widget: string }
+
+      - name: resume
+        label: CV File
+        file: src/data/resume.json
+        format: json
+        fields:
+          - {
+              name: cv,
+              label: "CV (upload a new PDF to replace it)",
+              widget: file,
+            }
